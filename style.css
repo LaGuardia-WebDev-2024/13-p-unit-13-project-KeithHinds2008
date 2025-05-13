@@ -20,3 +20,19 @@ hr {
   height: 5px;
   background-color: black;
 }
+
+form {background-color: teal;}
+
+h1 {color: pink;}
+
+option {color:pink;}
+
+#movie-form {color:red;}
+
+#book-form {color:red;}
+
+
+h3:hover {
+ background-color: pink; 
+  color: black;
+}
