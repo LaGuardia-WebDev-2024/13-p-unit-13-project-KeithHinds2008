@@ -11,7 +11,8 @@ Select ONE Additional Feature to Add
 [ no ] Feature 3 - .mouseover() Method
 [ no ] Feature 4 - :hover Feature 
 [ no ] Feature 5 - Add an Additional Interactive Drop-down
--->
+Hover feature added
+--> 
 
 <!DOCTYPE html>
 <html>
@@ -28,10 +29,10 @@ Select ONE Additional Feature to Add
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">White Chicks</option>
+          <option value="movie2">John Wick</option>
+          <option value="movie3">The Platform</option>
+          <option value="movie4">Bad Boys</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
@@ -43,15 +44,24 @@ Select ONE Additional Feature to Add
       <label>
         📖 What is my favorite book?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">A Series of Unfortunate event</option>
+          <option value="book2">Percy Jackson</option>
+          <option value="book3">Black Like Me</option>
+          <option value="book4">Twilight</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
     </form>
     <div id="book-result"></div>
+     <h3>
+       Did you get it right???...
+    </h3>
+    
+      <img src="https://cdn.glitch.global/c0566e6f-c53d-4f3c-a894-fd9bc4ec513c/IMG_0335.jpeg?v=1747147821558" width="200">
+    <img src="https://cdn.glitch.global/c0566e6f-c53d-4f3c-a894-fd9bc4ec513c/IMG_0334.jpeg?v=1747147830256" width="200">
+    <img src="https://cdn.glitch.global/c0566e6f-c53d-4f3c-a894-fd9bc4ec513c/IMG_0333.jpeg?v=1747147837675" width="200">
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       //Movie Question jQuery Code
@@ -81,7 +91,24 @@ Select ONE Additional Feature to Add
           $("#book-result").text("Try Again!");
         }
       });
+      
+   $("img").hide()   
+      $("img").slideDown(2000, function () { 
+
+$("h3").hide()
+      $("h3").fadeIn(3000);
+      
+              });
+      
+      
+      
+      
+      
+      
     </script>
+    
+   
+  
   </body>
 
   <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
